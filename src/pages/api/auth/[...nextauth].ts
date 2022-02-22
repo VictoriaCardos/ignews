@@ -14,4 +14,11 @@ export default NextAuth({
     }), 
   ],
 
+  callbacks:{
+   async signIn(user){
+     console.log(user)
+     return true
+   },
+  }
+
 })
